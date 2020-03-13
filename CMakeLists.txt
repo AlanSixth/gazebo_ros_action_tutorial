@@ -14,15 +14,17 @@ find_package(example_interfaces REQUIRED)
 find_package(gazebo_dev REQUIRED)
 find_package(gazebo_ros REQUIRED)
 find_package(rclcpp REQUIRED)
-# find_package(rosidl_default_generators REQUIRED)
+find_package(rclcpp_action REQUIRED)
 
 include_directories(include)
 
 add_library(gazebo_ros_action_tutorial SHARED src/gazebo_ros_action_tutorial.cc)
 ament_target_dependencies(gazebo_ros_action_tutorial
+  example_interfaces
   gazebo_dev
   gazebo_ros
   rclcpp
+  rclcpp_action
 )
 ament_export_libraries(gazebo_ros_action_tutorial)
 
