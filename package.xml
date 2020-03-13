@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gazebo_ros_action_tutorial</name>
+  <version>0.0.0</version>
+  <description>A gazebo_ros plugin that tries to create an action server.</description>
+  <author>John Doe</author>
+  <maintainer email="john.doe@whatever.com">John Doe</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>gazebo_dev</depend>
+  <depend>example_interfaces</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>gazebo_ros</depend>
+  <depend>rclcpp</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
